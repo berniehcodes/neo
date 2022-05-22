@@ -350,7 +350,8 @@ input, select, textarea {
 
 	}
 
-		h1.major:after, h2.major:after, h3.major:after {
+		h2.major:after, h3.major:after {
+			/* BH removed h1.major: after from the list of selectors */
 			content: '';
 			position: absolute;
 			left: 0;
@@ -360,17 +361,30 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 3rem;
-		line-height: 1.2;
-	}
 
+		/* BH add to change the font */
+		font-family:"sweet-fancy-script","Mea Culpa", cursive, sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 9rem;
+		color:black;
+		line-height: 8.5rem;
+		letter-spacing: 0.1rem;
+		/* padding-top: 5%; */
+		
+	}
+	
 		h1.major {
-			margin: 0 0 2.625rem 0;
+			margin: 0;
+			width: 75%;	
+			border:#e37b7c 0.5rem;
+			/* BH add to move the arrow down */
+
 		}
 
-			h1.major:after {
+			/* h1.major:after {
 				bottom: -1.325rem;
-			}
+			} BH removed for the main page*/
 
 	h2 {
 		font-size: 1.75rem;
@@ -486,9 +500,9 @@ input, select, textarea {
 				margin: 0 0 2.625rem 0;
 			}
 
-				h1.major:after {
+				/* h1.major:after {
 					bottom: -1.325rem;
-				}
+				} BH removed for the home page logo*/
 
 		h2 {
 			font-size: 1.5rem;
@@ -891,12 +905,21 @@ input, select, textarea {
 			opacity: 1;
 			z-index: 1;
 		}
+	
 
 		.image.filtered.tinted:after {
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
 			background-size: 128px 128px, auto, auto;
 		}
 
+
+		#logo:after{
+			/* BHremove the overlay for the logo */
+			background-image: none;
+			
+		}
+
+	
 		.image[data-position] img {
 			-moz-object-fit: cover;
 			-webkit-object-fit: cover;
@@ -1003,7 +1026,8 @@ input, select, textarea {
 
 		.image img {
 			display: block;
-		}
+
+ 		}
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -1121,6 +1145,20 @@ input, select, textarea {
 			justify-content: center;
 			width: 100%;
 			margin-left: 0;
+		}
+
+		ul.goarrow{
+			width: 25%; /* BH: add new class and properties on main page*/
+			align-items: center;
+			padding-top:10%
+		}
+
+		li.goarrow{
+			/* BH add */
+			align-content:space-between;
+			flex-direction: column;
+			align-items: center;
+			height:20%;
 		}
 
 			ul.actions.special li:first-child {
@@ -2165,7 +2203,7 @@ input, select, textarea {
 /* Panel */
 
 	.panel {
-		display: -moz-flex;
+		display: -moz-flex;r0
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
@@ -2196,7 +2234,9 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #f1ddcf,#fcf8f5 );
+				/* BH change to make background white; */
+				
 				background-size: 128px 128px, auto;
 			}
 
@@ -2713,7 +2753,7 @@ input, select, textarea {
 		}
 
 		.panel.color0 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+			/* background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4); */
 			background-size: 128px 128px, auto;
 		}
 
@@ -3270,7 +3310,8 @@ input, select, textarea {
 			-moz-flex-direction: column;
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
-			flex-direction: column;
+			flex-direction: row;
+			/* BH change flex direction from column */
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
@@ -3689,11 +3730,4 @@ input, select, textarea {
 
 	}
 
-	h1 {
-		font-family:"sweet-fancy-script","Mea Culpa", cursive, sans-serif;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 5rem;
-		color: black;
-		line-height: 5rem;
-	}
+
