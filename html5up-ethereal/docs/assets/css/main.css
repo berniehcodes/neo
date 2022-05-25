@@ -366,18 +366,19 @@ input, select, textarea {
 		font-family:"sweet-fancy-script","Mea Culpa", cursive, sans-serif;
 		font-style: normal;
 		font-weight: 500;
-		font-size: 9rem;
-		color:black;
-		line-height: 8.5rem;
+		font-size: 8rem;
+		color:  goldenrod;
+		line-height: 7rem;
 		letter-spacing: 0.1rem;
+		
 		/* padding-top: 5%; */
 		
 	}
 	
 		h1.major {
 			margin: 0;
-			width: 75%;	
-			border:#e37b7c 0.5rem;
+			width: 100%;	
+			
 			/* BH add to move the arrow down */
 
 		}
