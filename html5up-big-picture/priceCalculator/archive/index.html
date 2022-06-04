@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Neo Exquisite Events - Budget Calculator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<!--  link to sweet fancy script from adobe fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/dti7cif.css">
+		
+	<!--  link to backup mea cupla font in google fonts  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+
+
+
+        <section id="contact" class="main style3 secondary">
+            <div class="content">
+                <header>
+                    <h2>Consultation</h2>
+                    <p> Fill out the form below for a cost estimation for your Neo Exquisite Event. </p>
+                </header>
+                <div class="box">
+                    <form method="post" action="#">
+                        <div class="fields">
+                                <label for="eventName"> Event Name:</label>
+                                <div class="field"><input type="text" name="eventName" placeholder="Wedding, birthday, anniversary, baby shower..." /></div>
+                                
+                                <label for="numberOfGuests"> Number of Guests: </label>
+                                <section><input type="number" id="nGuests" name="numberOfGuests" placeholder="Number of Guests" /></section>
+                                
+                                <p> </p>
+
+                                <label for="balloons"> Number of Balloons: </label>
+                                <section>
+                                    <input type="number" id="nBalloon" name="balloons" placeholder="Number of 2ft balloon arches"/>
+                                    <p> $10-20 per linear foot </p>
+                                    <h4 class="subtotal"> Estimate for balloons: </h4>
+                                </section>
+
+                                <label for="centerpieces"> Centerpieces: </label>
+                                <div class="field half">
+                                    <input type="number" id="nCenter" name="tableSettings" placeholder="Number of centerpieces" />
+                                    <p> $50-200 per centerpiece </p>
+                                    <h4 class="subtotal"> Estimate for centerpieces: </h4>
+                                </div>
+
+                                <label for="tableSettings"> Table Settings: </label>
+                                <div class="field half">
+                                    <input type="number" id="nSettings" name="tableSettings" placeholder="Number of full dinner settings (glasses, cutlery, linens)" />
+                                    <p> $10-20 per setting </p>
+                                    <h4 class="subtotal"> Estimate for table settings: </h4>
+                                </div>
+
+                                <label for="partyFavours"> Party Favours </label>
+                                <div class="field half">
+                                    <input type="number" id="nPartyFavours" name="treats" placeholder="Treats" />
+                                    <p> $5-20 per guest </p>
+                                    <h4 class="subtotal"> Estimate for invitations party favours: </h4>
+                                </div>
+
+                                <label for="giftBaskets"> Gift Baskets </label>
+                                <div class="field half">
+                                    <input type="number" id="nBaskets" name="giftbasket" placeholder="gifts" />
+                                    <p> $200 per gift basket </p>
+                                    <h4 class="subtotal"> Estimate for gift basket: </h4>
+                                </div>
+                                
+                                <label for="invitations"> Invitations </label>
+                                <div class="field half">
+                                    <input type="number" id="nInvites" name="invitations" placeholder="Invitations" />
+                                    <p> $5-20 per guest </p>
+                                    <h4 class="subtotal"> Estimate for invitations: </h4>
+                                </div>
+
+                                <h3>Summary </h3>    
+                                <h3>Event Estimate Total: </h3>
+                                <h4>Cost per person: </h4>
+
+                                <label for="eventDetails">Enter additional details about the event:</label>
+                                <div class="field"><textarea name="eventDetails" placeholder="Additional details..." rows="6"></textarea></div>
+                        </div>
+                        <ul class="actions special">
+                            <li><button class="calculate" type="button"> Estimate </button></li>
+                            <li><button class="reset" type="reset"> Clear Inputs</button></li>
+                            <li><button class="submit" type="button">Submit and continue to contact form</button></li>    
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+		<!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+</html>
