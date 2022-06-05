@@ -500,7 +500,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, textarea, select {
-		font-family: "Source Sans Pro", "sans-serif";
+		font-family:"Source Sans Pro", "sans-serif";
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -521,6 +521,7 @@ input, select, textarea {
 			body, input, textarea, select {
 				font-size: 15pt;
 			}
+
 
 		}
 
@@ -566,11 +567,13 @@ input, select, textarea {
 		letter-spacing: -0.05em;
 	}
 
+
 	@media screen and (max-width: 736px) {
 
 		h2 {
 			font-size: 1.5em;
 		}
+
 
 	}
 
@@ -619,12 +622,13 @@ input, select, textarea {
 	}
 
 	/* BH Edit: customize font for h2 */
-	.introTitle{
+	.headline{
 		font-family:"sweet-fancy-script","Mea Culpa", cursive, sans-serif;
-		font-weight: 600;
-		font-size: 8rem;
+		font-weight: 500;
 		letter-spacing: 0.1rem;
 	}
+
+
 /* Box */
 
 	.box {
@@ -1856,12 +1860,16 @@ input, select, textarea {
 			left: 1em;
 			top: 0;
 			height: 3em;
-			line-height: 3em;
+			line-height: 2em;
+			font-size: 2em;
+			
 			cursor: default;
+			font-family:"sweet-fancy-script","Mea Culpa", cursive, sans-serif;
 		}
 
 			#header h1 a {
 				font-size: 1.25em;
+				
 			}
 
 		#header nav {
@@ -1906,6 +1914,7 @@ input, select, textarea {
 					top: 0;
 					height: 2.5em;
 					line-height: 2.5em;
+					font-size: 1.5em;
 				}
 
 					#header h1 a {
@@ -1970,7 +1979,7 @@ input, select, textarea {
 		}
 
 			.main.style1 h2 {
-				font-size: 4.25em;
+				font-size: 7.5em;
 				line-height: 1em;
 			}
 
@@ -2130,7 +2139,7 @@ input, select, textarea {
 			}
 
 				.main.style1 h2 {
-					font-size: 3em;
+					font-size: 6em;
 				}
 
 			.main.style2 {
