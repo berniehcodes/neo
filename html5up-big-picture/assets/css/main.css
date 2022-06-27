@@ -1205,6 +1205,7 @@ input, select, textarea {
 			display: block;
 			margin: 1em 0 0 0;
 			padding: 0 0 0.5em 0;
+			
 		}
 
 	footer {
@@ -1981,6 +1982,8 @@ input, select, textarea {
 			.main.style1 h2 {
 				font-size: 7.5em;
 				line-height: 1em;
+				
+		
 			}
 
 			.main.style1 > .content {
